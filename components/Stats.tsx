@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { BriefcaseBusiness, Users, BadgeCheck, MapPinned } from "lucide-react";
 
 type StatItem = {
   number: number;
   suffix?: string;
   label: string;
+  icon: React.ReactNode;
 };
 
 const stats: StatItem[] = [
@@ -13,20 +15,24 @@ const stats: StatItem[] = [
     number: 20,
     suffix: "+",
     label: "Anos de experiência",
+    icon: <BriefcaseBusiness size={20} />,
   },
   {
     number: 1200,
     suffix: "+",
     label: "Clientes atendidos",
+    icon: <Users size={20} />,
   },
   {
     number: 98,
     suffix: "%",
     label: "Índice de satisfação",
+    icon: <BadgeCheck size={20} />,
   },
   {
     number: 5,
     label: "Estados de atuação",
+    icon: <MapPinned size={20} />,
   },
 ];
 
@@ -109,13 +115,14 @@ export default function Stats() {
       <div className="container">
         <div className={`stats-header ${isVisible ? "show" : ""}`}>
           <span className="section-tag">Excelência em números</span>
+
           <h2 className="section-title">
-            Resultados que refletem solidez, confiança e atuação estratégica
+            Números que comprovam nossa atuação
           </h2>
+
           <p className="section-text">
-            Cada número representa compromisso com a defesa técnica, atendimento
-            personalizado e construção de soluções jurídicas seguras para nossos
-            clientes.
+            Atuação jurídica com experiência, proximidade e estratégia para
+            proteger empresas com segurança e confiança.
           </p>
         </div>
 
@@ -124,8 +131,10 @@ export default function Stats() {
             <div
               className={`stat-card ${isVisible ? "show" : ""}`}
               key={index}
-              style={{ transitionDelay: `${index * 0.15}s` }}
+              style={{ transitionDelay: `${index * 0.12}s` }}
             >
+              <div className="stat-icon">{item.icon}</div>
+
               <div className="stat-top-line"></div>
 
               <h3 className="stat-number glow-number">

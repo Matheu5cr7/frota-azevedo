@@ -1,15 +1,22 @@
+import Image from "next/image";
+
 export default function Header() {
   return (
     <header className="site-header">
       <div className="container header-container">
+
+        {/* LOGO */}
         <div className="logo">
-          <span className="logo-mark">F&A</span>
-          <div className="logo-text">
-            <strong>Frota & Azevedo</strong>
-            <span>Advogados</span>
-          </div>
+          <Image
+            src="/logo-site3.png"
+            alt="Frota & Azevedo Advogados"
+            width={180}
+            height={60}
+            priority
+          />
         </div>
 
+        {/* MENU */}
         <nav className="nav">
           <a href="#inicio">Início</a>
           <a href="#sobre">O Escritório</a>
@@ -18,9 +25,11 @@ export default function Header() {
           <a href="#contato">Contato</a>
         </nav>
 
+        {/* BOTÃO */}
         <a href="#contato" className="header-cta">
           Fale Conosco
         </a>
+
       </div>
     </header>
   );
