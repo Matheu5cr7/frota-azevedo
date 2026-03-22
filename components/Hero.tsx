@@ -6,14 +6,15 @@ export default function Hero() {
           <span className="section-badge">Advocacia estratégica e personalizada</span>
 
           <h1>
-            Soluções jurídicas com
-            <span> excelência, solidez e confiança</span>
+            Soluções jurídicas
+            <span> para o empresário que prospera</span>
           </h1>
 
           <p>
-            O escritório Frota & Azevedo Advogados atua com seriedade, técnica e
-            visão estratégica, oferecendo atendimento jurídico de alto padrão para
-            clientes que buscam segurança, credibilidade e resultados.
+            Com mais de 20 anos de experiência, Débora Frota e Kennio Azevedo acompanham a rotina e  o crescimento da sua empresa.
+            Atuação especializada em Direito do Trabalho e Cível.
+            Tudo que você, empresário, precisa para crescer sua empresa e proteger seu caixa.
+            Escritório físico localizado em Manaus - AM.
           </p>
 
           <div className="hero-actions">

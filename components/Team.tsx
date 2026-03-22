@@ -1,7 +1,7 @@
 const partners = [
   {
     name: "Kennio Souza Azevedo",
-    role: "Sócio-Fundador - OAB/AM 10.487",
+    role: "Sócio Fundador - OAB/AM 10.487",
     description:
       "Atuação estratégica em demandas complexas, com foco em planejamento, proteção patrimonial e soluções jurídicas de alto nível.",
     image: "/kennio.jpg",
