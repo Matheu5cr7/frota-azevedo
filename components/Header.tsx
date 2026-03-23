@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -7,28 +8,31 @@ export default function Header() {
 
         {/* LOGO */}
         <div className="logo">
-          <Image
-            src="/logo-site3.png"
-            alt="Frota & Azevedo Advogados"
-            width={180}
-            height={60}
-            priority
-          />
+          <Link href="/">
+            <Image
+              src="/logo-site3.png"
+              alt="Frota & Azevedo Advogados"
+              width={180}
+              height={60}
+              priority
+            />
+          </Link>
         </div>
 
         {/* MENU */}
         <nav className="nav">
-          <a href="#inicio">Início</a>
-          <a href="#sobre">O Escritório</a>
-          <a href="#areas">Áreas de Atuação</a>
-          <a href="#equipe">Equipe</a>
-          <a href="#contato">Contato</a>
+          <Link href="/">Início</Link>
+          <Link href="/#sobre">O Escritório</Link>
+          <Link href="/#areas">Áreas de Atuação</Link>
+          <Link href="/#equipe">Equipe</Link>
+          <Link href="/#contato">Contato</Link>
+          <Link href="/blog">Blog</Link>
         </nav>
 
         {/* BOTÃO */}
-        <a href="#contato" className="header-cta">
+        <Link href="/#contato" className="header-cta">
           Fale Conosco
-        </a>
+        </Link>
 
       </div>
     </header>

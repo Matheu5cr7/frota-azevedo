@@ -24,9 +24,9 @@ const stats: StatItem[] = [
     icon: <Users size={20} />,
   },
   {
-    number: 98,
-    suffix: "%",
-    label: "Índice de satisfação",
+    number: + 30,
+    suffix: "+",
+    label: "Milhões em patrimônio protegido.",
     icon: <BadgeCheck size={20} />,
   },
   {
